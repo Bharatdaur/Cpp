@@ -1,0 +1,47 @@
+#include<iostream>
+//There are two types of Header Files
+//System Header Files: It comes with the complier
+//ex- #include<iostream>
+//User Defined Header Files: It is written with programmer
+// ex-#include"this.h"
+using namespace std;
+int main(){
+    int a=4 , b=5;
+    cout<<"Operators in C++"<<endl; 
+    cout<<"Following are the types of opperators in c++"<<endl;
+    //Arithmatics Operators
+    cout <<" The value of a + b is " <<a+b<<endl;
+    cout <<" The value of a - b is " <<a-b<<endl;
+    cout <<" The value of a * b is " <<a*b<<endl;
+    cout <<" The value of a / b is " <<a/b<<endl;
+    cout <<" The value of a % b is " <<a%b<<endl;
+    cout <<" The value of a++ b is " <<a++<<endl;
+    cout <<" The value of a-- is " <<a--<<endl;
+    cout <<" The value of ++a is " <<++a<<endl;
+    cout <<" The value of --a is " <<--a<<endl;
+    cout <<endl;
+
+    //Assignment Operators:used to assign values to variable
+    // int a=3 , b=9;
+    // char d='d';
+
+    //Comparison Operators
+    cout <<"Following are the Comparison Operators in c++"<<endl;
+    cout <<"The value of a==b is "<<(a==b)<<endl;
+    cout <<"The value of a!=b is "<<(a!=b)<<endl;
+    cout <<"The value of a>=b is "<<(a>=b)<<endl;
+    cout <<"The value of a<=b is "<<(a<=b)<<endl;
+    cout <<"The value of a<b is "<<(a<b)<<endl;
+    cout <<"The value of a>b is "<<(a>b)<<endl;
+
+    //Logical Operators
+    cout <<"Following are the Logical Operators in c++"<<endl;
+    cout <<"The value of this Logical and Operators ((a==b) && (a<b)) is "<<((a==b) && (a<b))
+    <<endl;
+    cout <<"The value of this Logical or Operators ((a==b) || (a<b)) is "<<((a==b) || (a<b))
+    <<endl;
+     cout <<"The value of this Logical not Operators (!(a==b))  is "<<(!(a==b)) 
+    <<endl;
+
+    return 0;
+}
