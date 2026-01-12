@@ -1,0 +1,38 @@
+#include<iostream>
+using namespace std;
+int main(){
+    //cout<<"This is B7 programe";
+    int age;
+    cout<<"Tell me your age"<<endl;
+    cin>>age;
+
+    //Selection control structure: if else-if else ladder
+    // if(age<18){
+    //     cout<<"You can not come to my party"<<endl;
+    // }
+    // else if (age==18){
+    //     cout<<"You can come with kid pass in my party"<<endl;
+    // }
+    // else{
+    //     cout<<"You can come to my party"<<endl;
+
+    // }
+
+    //Selection control structure: Switch case statemants
+    switch (age)
+    {
+    case 18:
+        cout<<"you are 18";
+        break;
+    case 22:
+        cout<<"you are 22";
+        break;
+     case 2:
+        cout<<"you are 2";
+        break;
+
+    default:cout<<"there is no such special case";
+        break;
+    }
+    return 0;
+}
