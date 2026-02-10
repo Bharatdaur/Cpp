@@ -1,0 +1,87 @@
+    // OOPs- classes and objects
+    // C++ :- initially called c with classes by stroustop
+    //class  :- extension of structures
+    // structures has limitations
+      // 1) members are public
+      // 2) no methods
+    //classes :-  structures + more
+    //classes can have methods and properties
+    //classes can make few members as private and few as public
+    //structures in c++ are typedefed
+    //you can declear objects along with class declaration like this
+      // ex :- class employ{
+        //class defination
+        //} harrry  , rohan , lovish;
+    //harry.salary = 200 makes no sense if salary is pprivate
+
+    //  Nesting of members function
+
+ #include<iostream>
+ #include<string>
+ using namespace std;
+
+    class binary
+    {
+        //private:  by default class members are private  
+        string s;
+        void chk_bin(void);
+        
+        public:
+        void read(void);
+        void ones_compliment(void);
+        void display(void);
+    };
+
+    void binary :: read(void){
+        cout << "Enter the binary number" <<endl;
+        cin>> s;
+    }
+
+    void binary :: chk_bin(void)
+    {
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (s.at(i) != '0' && s.at(i) != '1')
+            {
+                cout<< "Incorrect binary format"<< endl;
+                exit(0);
+            }   
+        }
+    }
+
+    void binary :: ones_compliment(void)
+    {
+        chk_bin();
+        for (int i = 0; i < s.length(); i++)
+        {
+            if (s.at(i) == '0')
+            {
+                s.at(i) = '1' ;
+            }
+            else
+            {
+                s.at(i) = '0' ;
+            }
+        }
+    }
+
+    void binary :: display(void)
+    {
+        cout<< "Displying your binary number" <<endl;
+        for (int i = 0; i < s.length(); i++)
+        {
+            cout<< s.at(i);         
+        }
+        cout<<endl;
+    }
+
+   int main(){
+    binary b;
+    b.read();
+    //b.chk_bin();      it is nasting of member function 
+    b.display();
+    b.ones_compliment();
+    b.display();
+    
+    return 0;
+    }
