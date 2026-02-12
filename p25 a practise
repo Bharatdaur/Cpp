@@ -1,0 +1,34 @@
+#include<iostream>
+using namespace std;
+
+class employee{
+    int id;
+    int salary;
+
+    public:
+    void setdata(){
+        salary=200;
+        cout<<"Enter the id of the emplyoee "<<endl;
+        cin>>id;
+    }
+
+    void getdata(){
+        cout<< "the id of this emplyoee is "<<id<<endl;
+    }
+};
+    
+int main(){
+    /*emlyoee harry, rohan, bharat, ram;
+    harry.setdata();
+    harry.getdata();
+    */
+
+   employee og[5];
+   for (int i = 0; i < 5; i++)
+   {
+    og[i].setdata();
+    og[i].getdata();
+   }
+   
+    return 0;
+}
